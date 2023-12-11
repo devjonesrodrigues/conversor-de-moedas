@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversor de Moeda</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/logo.gif" alt="logo-gif">
+
+    <main>
+        <label>
+            Converter <span>de</span>
+            <select>
+                <option>R$ Real brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <span>para</span>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">Libra</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            <span>Valor</span>
+            <input class="input-value" placeholder="$..." />
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img src="./assets/real.png" alt="real-logo-icone">
+                <p class="money-type">Real</p>
+                <p class="value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/seta.png" alt="seta-img">
+
+            <div class="currency-box">
+                <img class="currency-image" src="./assets/dolar.png" alt="dolar-logo-icone">
+                <p class="money-type" id="currency-name">Dólar</p>
+                <p class="currency-value">US$ 0,00</p>
+            </div>
+        </section>
+
+    </main>
+
+            <script src="./scripts.js"></script>
+
+</body>
+
+</html>
